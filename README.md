@@ -44,7 +44,3 @@ The **Diyar Slider Plugin** is a custom WordPress plugin designed to create and 
 - **Swiper JS**: Integrated via local files.  
 - **WordPress**: Version 5.8 or higher.
 
----
-
-## Support
-For support or feature requests, contact the **Diyar Slider Plugin** team via email: 
