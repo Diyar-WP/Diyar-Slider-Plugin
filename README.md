@@ -1,41 +1,50 @@
-# Slider Block plugin
+# **Custom Diyar Slider Plugin Documentation**
 
-__Fork it, or download the [latest release](https://github.com/colorful-tones/slider-block/releases), and make it your own!__
+## **Overview**
+The **Diyar Slider Plugin** is a custom WordPress plugin designed to create and manage sliders using Swiper JS. It provides an intuitive interface for creating responsive and interactive sliders tailored for various website needs.
 
-This is a demonstration of how you might create a custom Slider Block, which is a slider carousel UI. We're using SwiperJS (3rd-party dependency) for the slider JavaScript and CSS (mostly).
+---
 
-## Installation
+## **Features**
+- Fully responsive sliders.
+- Swiper JS integration for modern and flexible slider functionality.
+- Customizable settings like autoplay, navigation, pagination, and loop.
+- Breakpoint configurations for better responsiveness.
+- Shortcode support for embedding sliders anywhere.
 
-### Manual
+---
 
-1. Upload the `slider-block` folder to the plugins directory (typically `wp-content/plugins`) in your WordPress installation.
-2. Activate the Slider Block plugin.
-3. Create a new post or page, and insert the Slider block.
-4. That's it.
+## **Installation**
+1. Download the plugin ZIP file.
+2. Log in to your WordPress admin dashboard.
+3. Navigate to **Plugins > Add New**.
+4. Click **Upload Plugin** and upload the ZIP file.
+5. Click **Install Now**, then **Activate** the plugin.
 
-## Changelog
+---
 
-### 0.1.2 – 2023-12-04
+## **Usage**
+### **Creating a Slider**
+1. Go to **Diyar Slider** in the WordPress admin menu.
+2. Click **Add New Slider**.
+3. Configure the slider settings:
+   - **Autoplay**: Enable/Disable automatic slide transition.
+   - **Navigation**: Show/Hide next/previous buttons.
+   - **Pagination**: Enable/Disable bullet navigation.
+   - **Slides Per View**: Number of slides visible at a time.
+   - **Breakpoints**: Define custom slides per view for different screen sizes.
+4. Add slides by uploading images and adding optional titles, descriptions, or links.
+5. Save the slider.
 
-- 🐛 FIX: missing memoization
-- 👌 IMPROVE: Allowed Blocks = core/cover only
+---
 
-### 0.1.1 – 2023-12-04
 
-- Major refactor 😎:
-  - Remove need to have two custom blocks: Slider and Slide (`"parent": ['wpe/slider]`). This was just unnecessary and mildly confusing. We're ultimately utilising `InnerBlocks` and `useInnerBlocksProps()` to nest things.
-  - Create `constants.js` to try and allow builders to drop in their own default blocks for slides.
-  - Generally "cleaner" codebase.
+## Dependencies
 
-### 0.1.0 – 2023-11-28
+- **Swiper JS**: Integrated via local files.  
+- **WordPress**: Version 5.8 or higher.
 
-Initial release, which includes:
+---
 
-- Slider Block which uses [SwiperJS](https://swiperjs.com/) (v11.0.5)
-
-## Resources
-
-- Need help converting your block markup to PHP nested arrays or JS objects? Check out [WPHTML Converter](https://happyprime.github.io/wphtml-converter/)
-- [SwiperJS](https://swiperjs.com/).
-# testttt
-# Diyar-Slider-Plugin
+## Support
+For support or feature requests, contact the **Diyar Slider Plugin** team via email: 
