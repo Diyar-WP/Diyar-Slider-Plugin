@@ -1,0 +1,82 @@
+/*
+ * Allow full-width images to be full width
+ */
+.editor-styles-wrapper [data-type="wpe/slider"].alignfull [data-type="wpe/slide"] .components-resizable-box__container {
+	max-width: none !important;
+	width: 100% !important;
+}
+
+/*
+ * Set z-index context for overall slider
+ */
+.editor-styles-wrapper [data-type="wpe/slider"] {
+	z-index: 1;
+}
+
+/*
+ * Disable pagination clicking in editor,
+ * because it is kind of problematic.
+ */
+// .editor-styles-wrapper [data-type="wpe/slider"] .swiper-pagination {
+// pointer-events: none;
+// }
+
+.editor-styles-wrapper [data-type="wpe/slider"] .swiper-pagination::after {
+	content: '';
+	// position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.editor-styles-wrapper [data-type="wpe/slider"] .swiper-pagination * {
+	// pointer-events: none;
+}
+
+.editor-styles-wrapper [data-type="wpe/slider"] .slider-appender {
+	flex-direction: row;
+}
+
+.editor-styles-wrapper [data-type="wpe/slider"] .slider-appender[aria-label]::before {
+	content: attr(aria-label);
+	display: inline-flex;
+}
+
+.swiper-slide .wp-block-cover__inner-container{
+	margin-bottom: 124px !important;
+}
+
+
+/* Operation Slider Pattern */
+.images-slider .swiper ,.image-slider-item{
+	width: 377px;
+	height: 354px;
+		max-width: 377px !important;
+
+}
+
+.images-slider  .swiper-button-next.swiper-button-disabled,.images-slider  .swiper-button-prev.swiper-button-disabled {
+    visibility: visible !important;
+}
+
+.images-slider .swiper-button-next ,
+.swiper-rtl .images-slider  .swiper-button-prev{
+	    border-radius: 0px 50px 50px 0px;
+    padding: 10px;
+    width: 35px;
+    height: 36px;
+	    background: rgb(0 0 0 / 30%);
+		    margin-left: 10px;
+		opacity: 1 !important;
+
+}
+
+.images-slider .swiper-button-prev,
+.swiper-rtl .images-slider .swiper-button-next{
+	   border-radius: 50px 0px 0px 50px;
+    padding: 10px;
+    width: 35px;
+    height: 36px;
+	    background: rgb(0 0 0 / 30%);
+}
